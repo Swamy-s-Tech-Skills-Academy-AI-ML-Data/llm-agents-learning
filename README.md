@@ -37,9 +37,11 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
  
 # Install required Python packages
-pip install numpy 
-pip install pandas 
-pip install matplotlib seaborn scikit-learn nltk gensim tqdm adjustText umap-learn torch wordcloud
+pip install numpy pandas matplotlib scikit-learn 
+
+pip install seaborn nltk gensim tqdm adjustText umap-learn torch wordcloud
+
+
 
 # Save your environment
 pip freeze > requirements.txt
