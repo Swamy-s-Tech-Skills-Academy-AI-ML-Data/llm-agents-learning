@@ -9,3 +9,35 @@ This repository is inspired by and follows concepts from the book:
 **Building AI Agents with LLMs, RAG, and Knowledge Graphs** (Packt Publishing)
 
 For more details, visit [Packt Publishing](https://www.packtpub.com/en-us/product/building-ai-agents-with-llms-rag-and-knowledge-graphs-9781835080382).
+
+## 🛠️ Prerequisites
+
+- Python 3.12.5
+- Windows 11
+- PowerShell
+- OpenAI API key
+- Basic programming knowledge
+- Willingness to experiment and learn
+
+## 🚀 Quick Start
+
+git clone <https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/llm-agents-learning.git>
+
+## 🏁 Setup & Quick Start
+
+```powershell
+# Clone the repository
+git clone https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/llm-agents-learning.git
+cd llm-agents-learning
+
+# Create a virtual environment
+python -m venv .venv
+
+# Activate the virtual environment
+.\.venv\Scripts\Activate.ps1
+
+# Install dependencies (if any)
+pip install -r requirements.txt
+```
+
+> **Note:** If you are starting fresh, `requirements.txt` will be empty. You can manually install packages as you progress and update `requirements.txt` accordingly.
