@@ -12,36 +12,33 @@ For more details, visit [Packt Publishing](https://www.packtpub.com/en-us/produc
 
 ## 🛠️ Prerequisites
 
-- Python 3.12.5
-- Windows 11
-- PowerShell
-- OpenAI API key
-- Basic programming knowledge
-- Willingness to experiment and learn
+- Windows 11 + PowerShell
+- Python 3.12.x (recommended for smooth SciPy/gensim installs on Windows)
+ 	- If you’re on Python 3.13, some scientific packages may try to build from source. Prefer 3.12 or use Conda.
+- OpenAI API key (only for later chapters/apps)
+- Basic programming knowledge and curiosity
 
-## 🚀 Quick Start
-
-git clone <https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/llm-agents-learning.git>
-
-## 🏁 Setup & Quick Start
+## 🚀 Setup & Quick Start (Windows + PowerShell)
 
 ```powershell
 # Clone the repository
 git clone https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/llm-agents-learning.git
 cd llm-agents-learning
 
-# Create a virtual environment with current Python version
-python -m venv .venv
-
-# Create a Python 3.12 virtual environment
+# Create a Python 3.12 virtual environment (recommended)
 py -3.12 -m venv .venv
 
 # Activate the virtual environment
 .\.venv\Scripts\Activate.ps1
- 
+
+# Upgrade pip
+python -m pip install --upgrade pip
+
 # Install required Python packages
 pip install numpy pandas matplotlib scikit-learn seaborn nltk
 
+# Optional: install extras when you reach embeddings/visualizations/DL
+# (gensim pulls in scipy; Python 3.12 avoids source builds on Windows)
 pip install gensim tqdm adjustText umap-learn torch wordcloud
 
 # Save your environment
@@ -57,12 +54,18 @@ See [docs/Chapter1.md](docs/Chapter1.md) for a full list of required packages an
 
 > **Note:** If you are starting fresh, `requirements.txt` will be empty. You can manually install packages as you progress and update `requirements.txt` accordingly.
 
-## ?? What should be the title
+## ✅ Verify your Python setup
 
 ```powershell
-# What is this command doing
+# Print the active interpreter version (should show 3.12.x)
 python -c "import sys; print(sys.version)"
 
-# What is this command doing
+# List installed Python interpreters (Windows launcher)
 py -0p
 ```
+
+## 📒 Start with the first notebook
+
+- Open `src/ch1/IntroductiontoAIAgents.ipynb` in VS Code
+- Select the `.venv` interpreter as the Jupyter kernel
+- Run cells in order; the first sections (One‑Hot, BoW, TF/IDF) only need `numpy`
