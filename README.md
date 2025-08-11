@@ -30,8 +30,11 @@ git clone <https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/llm-agents-
 git clone https://github.com/Swamy-s-Tech-Skills-Academy-AI-ML-Data/llm-agents-learning.git
 cd llm-agents-learning
 
-# Create a virtual environment
+# Create a virtual environment with current Python version
 python -m venv .venv
+
+# Create a Python 3.12 virtual environment
+py -3.12 -m venv .venv
 
 # Activate the virtual environment
 .\.venv\Scripts\Activate.ps1
@@ -53,3 +56,11 @@ pip install -r requirements.txt
 See [docs/Chapter1.md](docs/Chapter1.md) for a full list of required packages and their purpose for Chapter 1.
 
 > **Note:** If you are starting fresh, `requirements.txt` will be empty. You can manually install packages as you progress and update `requirements.txt` accordingly.
+
+## ?? What should be the title
+
+```powershell
+python -c "import sys; print(sys.version)"
+
+py -0p
+```
