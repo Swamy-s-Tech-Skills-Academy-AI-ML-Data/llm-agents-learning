@@ -60,7 +60,9 @@ See [docs/Chapter1.md](docs/Chapter1.md) for a full list of required packages an
 ## ?? What should be the title
 
 ```powershell
+# What is this command doing
 python -c "import sys; print(sys.version)"
 
+# What is this command doing
 py -0p
 ```
