@@ -35,9 +35,19 @@ python -m venv .venv
 
 # Activate the virtual environment
 .\.venv\Scripts\Activate.ps1
+ 
+# Install required Python packages
+pip install numpy pandas matplotlib seaborn scikit-learn nltk gensim tqdm adjustText umap-learn torch wordcloud
 
-# Install dependencies (if any)
+# Save your environment
+pip freeze > requirements.txt
+
+# Install dependencies from requirements.txt (if any)
 pip install -r requirements.txt
 ```
+
+## 📦 Required Python Packages
+
+See [docs/Chapter1.md](docs/Chapter1.md) for a full list of required packages and their purpose for Chapter 1.
 
 > **Note:** If you are starting fresh, `requirements.txt` will be empty. You can manually install packages as you progress and update `requirements.txt` accordingly.
