@@ -1,0 +1,33 @@
+{
+    "project": {
+        "name": "llm-agents-learning",
+        "python": "3.12",
+        "entryNotebooks": [
+            "src/ch1/01_text_representations.ipynb",
+            "src/ch1/02_embeddings_visualization.ipynb",
+            "src/ch1/03_sentiment_classifier.ipynb",
+            "src/ch1/IntroductiontoAIAgents.ipynb"
+        ]
+    },
+    "guidance": {
+        "repositoryInstructionsPath": ".github/copilot-instructions.md",
+        "windowsFirst": true,
+        "preferPythonFallbacks": true,
+        "nltkEnsure": [
+            "punkt",
+            "punkt_tab"
+        ]
+    },
+    "notebooks": {
+        "editMode": "json",
+        "hideCellIdsInResponses": true
+    },
+    "style": {
+        "concise": true,
+        "avoidHeavyFormatting": true
+    },
+    "security": {
+        "noSecretsInNotebooks": true,
+        "noUntrustedDownloads": true
+    }
+}
