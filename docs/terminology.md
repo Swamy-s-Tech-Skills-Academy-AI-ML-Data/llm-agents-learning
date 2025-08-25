@@ -8,6 +8,15 @@ Short, plain‑English definitions for the terms used throughout this repo. Word
 - Token: A cleaned, lowercased word unit used in our examples.
 - Vocabulary: The set of unique tokens found in a text or corpus (often sorted for consistency).
 
+## Foundations (ML/DL)
+
+- Machine learning (ML): Using data to fit models that make predictions or find patterns without hand‑coded rules.
+- Deep learning (DL): ML using neural networks with many layers to learn complex patterns from data.
+- Neural network (NN): A stack of layers with learnable weights that transforms inputs into outputs.
+- Feature vector: The numeric representation of a sample (e.g., a document or token) used by a model.
+- Dimensionality: The number of entries (length) in a feature vector.
+- Sparsity: Most entries are 0 (typical for one‑hot and BoW).
+
 ## Classic representations
 
 - One‑hot encoding: A simple vector for a token with a single 1 at its position in the vocabulary and 0s elsewhere. No meaning beyond identity.
@@ -26,12 +35,14 @@ Short, plain‑English definitions for the terms used throughout this repo. Word
 - Long Short‑Term Memory (LSTM): A type of RNN designed to better remember information by using gates to control what to keep or forget.
 - Gated Recurrent Unit (GRU): A streamlined RNN similar to LSTM that uses gates to manage memory with fewer parameters.
 - Convolutional Neural Network (CNN) for text: A model that scans over word windows with filters to pick up local patterns like phrases or n‑grams.
+- Sequence modeling: Handling ordered data (like sentences) where position and context matter.
 
 ## Datasets and pipelines
 
 - Corpus: A collection of texts used for building vocabularies, statistics, and models.
 - Preprocessing: Steps like lowercasing, removing punctuation, and tokenizing to make text consistent.
 - Feature matrix: A table where rows are documents or tokens and columns are features (e.g., words); the entries are counts, weights, or 0/1 indicators.
+- Text classification: Assigning labels (sentiment, topic) to text samples.
 
 ## Modern context
 
