@@ -17,6 +17,14 @@ Short, plain‑English definitions for the terms used throughout this repo. Word
 - Dimensionality: The number of entries (length) in a feature vector.
 - Sparsity: Most entries are 0 (typical for one‑hot and BoW).
 
+## Vectors and vectorization
+
+- Vector: An ordered list of numbers. In NLP/ML it represents a token, sentence, or document as numeric features.
+- Vectorization: The step that turns raw text into vectors so models can use it (e.g., one‑hot, Bag of Words, TF‑IDF, embeddings).
+- Sparse vector: A vector with many zeros. Common for one‑hot and BoW; memory‑efficient when stored in sparse formats.
+- Dense vector: A vector with mostly non‑zero values. Typical for embeddings; captures similarity and meaning in compact form.
+- Sparse matrix: A 2D array with many zeros; libraries like SciPy provide CSR/CSC formats to save memory and speed up operations.
+
 ## Classic representations
 
 - One‑hot encoding: A simple vector for a token with a single 1 at its position in the vocabulary and 0s elsewhere. No meaning beyond identity.
