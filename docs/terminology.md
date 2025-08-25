@@ -33,6 +33,14 @@ Short, plain‑English definitions for the terms used throughout this repo. Word
 - Inverse Document Frequency (IDF): A weight that lowers the importance of words that appear in many documents and raises those that are rare.
 - TF‑IDF: The product of TF and IDF, highlighting words that are frequent in one document but uncommon overall.
 
+## BoW and dimensionality considerations
+
+- Document vector: A single vector that represents a whole document (sentence, paragraph, review). With BoW/TF‑IDF its length equals the vocabulary size.
+- Vocabulary size: The number of unique tokens. As this grows, vectors get longer and models require more memory and compute.
+- High‑dimensional: A setting where feature vectors have many components. Often sparse in text tasks; can increase compute cost and overfitting risk.
+- Curse of dimensionality: As the number of features increases, distances between examples become less meaningful and many algorithms need far more data/regularization.
+- Dimensionality reduction (context): Techniques to reduce feature count or project to lower dimensions (e.g., SVD for sparse text features; UMAP/t‑SNE for visualization).
+
 ## Learned representations
 
 - Word embeddings: Dense vectors learned from data that place related words near each other in a continuous space (e.g., word2vec). Capture similarity beyond exact matches.
@@ -51,6 +59,14 @@ Short, plain‑English definitions for the terms used throughout this repo. Word
 - Preprocessing: Steps like lowercasing, removing punctuation, and tokenizing to make text consistent.
 - Feature matrix: A table where rows are documents or tokens and columns are features (e.g., words); the entries are counts, weights, or 0/1 indicators.
 - Text classification: Assigning labels (sentiment, topic) to text samples.
+
+### Common preprocessing tactics
+
+- Stopwords: Very common words (e.g., articles, prepositions) often removed to reduce noise.
+- Punctuation/number handling: Remove or normalize punctuation and digits to keep tokens consistent.
+- Spelling normalization: Correcting misspellings to reduce spurious unique tokens.
+- Stemming: Heuristic rules that chop word endings to a base form (e.g., “running” → “run”).
+- Lemmatization: Dictionary‑based reduction to canonical forms (e.g., “better” → “good”).
 
 ## Modern context
 
