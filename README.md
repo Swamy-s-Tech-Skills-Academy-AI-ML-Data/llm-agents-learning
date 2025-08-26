@@ -12,11 +12,7 @@ For more details, visit [Packt Publishing](https://www.packtpub.com/en-us/produc
 
 ## 🛠️ Prerequisites
 
-- Windows 11 + PowerShell
-- Python 3.12.x (recommended for smooth SciPy/gensim installs on Windows)
- 	- If you’re on Python 3.13, some scientific packages may try to build from source. Prefer 3.12 or use Conda.
-- OpenAI API key (only for later chapters/apps)
-- Basic programming knowledge and curiosity
+ - If you’re on Python 3.13, some scientific packages may try to build from source. Prefer 3.12 or use Conda.
 
 ## 🚀 Setup & Quick Start (Windows + PowerShell)
 
@@ -69,3 +65,9 @@ py -0p
 - Open `src/ch1/IntroductiontoAIAgents.ipynb` in VS Code
 - Select the `.venv` interpreter as the Jupyter kernel
 - Run cells in order; the first sections (One‑Hot, BoW, TF/IDF) only need `numpy`
+
+## 📚 Glossary
+
+If you’re new to the terms used here (e.g., one‑hot, TF‑IDF, embeddings, RNN/LSTM/GRU), see the beginner glossary:
+
+- [docs/terminology.md](docs/terminology.md)
